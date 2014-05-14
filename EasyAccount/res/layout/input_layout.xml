@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+    
+    <TableLayout android:id="@+id/tablelayout11"
+	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns = "0"
+    	
+    	>
+    	<TableRow >
+    	   	<TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_but_monthstart" 
+    		android:textSize="28sp"
+    		android:layout_gravity="center"
+	        />
+    	</TableRow>
+    	
+    </TableLayout>
+    <TableLayout android:id="@+id/tablelayout11"
+	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns = "0,1,2,3"
+    	>
+    	<TableRow >
+    		<TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	    <TextView 
+    	       	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_cash"
+    			android:textSize="20sp"
+    	        />
+    	    <EditText android:id="@+id/in_cash"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="20sp"
+    			android:singleLine="true"
+    			android:digits="1234567890."
+    			android:inputType="number"
+
+    	        />
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	</TableRow>
+    	
+    	<TableRow >
+    	   	<TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	    <TextView 
+    	       	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_bank"
+    			android:textSize="20sp"
+    	        />
+    	    <EditText android:id="@+id/in_bank"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="20sp"
+    			android:singleLine="true"
+    			android:digits="1234567890."
+    			android:inputType="number"
+    	        />
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	</TableRow>
+    	
+    	<TableRow >
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	    <TextView 
+    	       	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_zhifubao"
+    			android:textSize="20sp"
+    	        />
+    	    <EditText android:id="@+id/in_zhifubao"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="20sp"
+    			android:singleLine="true"
+    			android:digits="1234567890."
+    			android:inputType="number"
+    	        />
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	</TableRow>
+    	
+    	<TableRow >
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	    <TextView 
+    	       	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_yuebao"
+    			android:textSize="20sp"
+    	        />
+    	    <EditText android:id="@+id/in_yuebao"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="20sp"
+    			android:singleLine="true"
+    			android:digits="1234567890."
+    			android:inputType="number"
+    	        />
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	</TableRow>
+    	
+    	<TableRow >
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	    <TextView 
+    	       	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_caifutong"
+    			android:textSize="20sp"
+    	        />
+    	    <EditText android:id="@+id/in_caifutong"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="20sp"
+    			android:singleLine="true"
+    			android:digits="1234567890."
+    			android:inputType="number"
+    	        />
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	</TableRow>
+    	
+    	<TableRow >
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	    <TextView 
+    	       	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_other"
+    			android:textSize="20sp"
+    	        />
+    	    <EditText android:id="@+id/in_other"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="20sp"
+    			android:singleLine="true"
+    			android:digits="1234567890."
+    			android:inputType="number"
+    	        />
+    	    <TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+    	</TableRow>
+    	</TableLayout>
+    	<TableLayout android:id="@+id/tablelayout12"
+	   	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:stretchColumns = "0,1"
+    	>
+    	<TableRow >
+    	    <Button	android:id="@+id/in_cancel"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_cancel"
+    			android:textSize="20sp"
+    	        />
+    	    <Button	android:id="@+id/in_save"
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_save"
+    			android:textSize="20sp"
+    	        />
+    	</TableRow>
+        
+    	</TableLayout>
+    
+
+</LinearLayout>

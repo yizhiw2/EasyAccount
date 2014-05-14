@@ -1,0 +1,230 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cacaca"
+    >
+	<!-- 第一个TableLayout -->  
+	<!-- head  --> 
+	<TableLayout android:id="@+id/tablelayout01"
+	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns = "0,1"
+    	>
+		<TableRow>
+	   		<Button android:id="@+id/head01"
+	     		android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"  
+    			android:text = "@string/str_head01" 
+    			></Button>
+	    	<Button android:id="@+id/head02"
+	     		android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"  
+    			android:text = "@string/str_head02" 
+    			></Button>
+		</TableRow>
+	</TableLayout>
+	
+	<!-- 第2个TableLayout --> 
+	<!-- 日期 --> 
+	<TableLayout android:id="@+id/tablelayout02"
+	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns = "0,1"
+    	>
+		<TableRow>
+	    	<TextView 
+	        	android:layout_width="wrap_content"
+    			android:layout_height="match_parent"  
+    			android:text = "@string/str_text01" 
+    			android:textSize="20sp"
+    			android:gravity="center"
+	        	/>
+	    	<DatePicker 
+	    	    android:id="@+id/datepicker"
+	    	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity = "center_horizontal"
+    			android:startYear = "2012"
+    			android:endYear = "2050"
+    			android:calendarViewShown = "false"
+    			android:spinnersShown = "true"
+ 	    	    />
+	    	
+	    	</TableRow>
+	    <!-- 完成设置日期按钮 -->
+		<Button  android:id="@+id/but_date"
+		     	android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/str_date"
+		    />
+	</TableLayout>
+	
+	<!-- 控制排版画的线与空白 -->
+	<View  android:layout_height="8dp" 
+	    android:background="#cacaca"       
+        android:layout_width="match_parent">
+	</View>
+	<View  android:layout_height="4dp" 
+	    android:background="#ffffff"       
+        android:layout_width="match_parent">
+	</View>
+	<View  android:layout_height="8dp" 
+	    android:background="#cacaca"       
+        android:layout_width="match_parent">
+	</View>
+
+	<!-- 月初月末的layout -->
+	<TableLayout android:id="@+id/tablelayout03"
+	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns = "0,1"
+    	>
+		
+		<TableRow>
+			<!-- 月初 -->
+		    <TextView 
+	        	android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"  
+    			android:text = "@string/str_monthstart" 
+    			android:textSize="20sp"
+    			android:layout_gravity="center"
+	        	/>
+		        	
+			<!-- 月末 -->
+		    <TextView 
+	        	android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"  
+    			android:text = "@string/str_monthend" 
+    			android:textSize="20sp"
+    			android:layout_gravity="center"
+	        	/>
+			</TableRow>
+	</TableLayout>
+	
+	<!-- 按钮的排版 -->
+	<TableLayout android:id="@+id/tablelayout04"
+	   	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns = "0,1,2,3,4,5"
+    	>
+		<TableRow>
+		<TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+		<Button  android:id="@+id/but_input"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text = "@string/str_but_monthstart"
+    		
+			/>  
+		<TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+		<TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+		<Button  android:id="@+id/but_output"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text = "@string/str_but_monthend" 
+
+			/>
+		<TextView 
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"  
+    		android:text = "@string/str_null" 
+    		android:textSize="20sp"
+    		android:layout_gravity="center"
+	        />
+		</TableRow>  
+	</TableLayout>  
+	
+	
+	<View  android:layout_height="8dp" 
+	    android:background="#cacaca"       
+        android:layout_width="match_parent">
+	</View>
+	<View  android:layout_height="4dp" 
+	    android:background="#ffffff"       
+        android:layout_width="match_parent">
+	</View>
+	<View  android:layout_height="8dp" 
+	    android:background="#cacaca"       
+        android:layout_width="match_parent">
+	</View>
+	
+	<!-- 计算消费 -->
+	<TableLayout android:id="@+id/tablelayout05"
+	   	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns = "0"
+    	>
+		<TableRow>
+		    <Button  android:id="@+id/button_count"
+				android:layout_width="match_parent"
+    			android:layout_height="wrap_content" 
+    			android:text = "@string/str_but_count"
+			/>
+		</TableRow>
+
+	</TableLayout> 
+	<TableLayout android:id="@+id/tablelayout06"
+	   	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	>
+		
+		    <View  android:layout_height="8dp" 
+	    		android:background="#cacaca"       
+        		android:layout_width="match_parent">
+				</View>
+			
+		    <TextView 
+	    			android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"  
+    				android:text = "@string/str_xiaofei" 
+    				android:textSize="20sp"
+	        		/> 
+	</TableLayout>    
+	
+	<!-- 显示消费数值的文本框 -->
+	<TableLayout android:id="@+id/tablelayout07"
+	   	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	>  
+			<TableRow >
+				<EditText 
+		    		android:id="@+id/cost"
+	    			android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"  
+    				android:text = "@string/str_hint" 
+    				android:textSize="20sp"
+    				android:background="@null" 
+    				
+	        		/>
+				<TextView 
+	    			android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"  
+    				android:text = "@string/str_yuan" 
+    				android:textSize="20sp"
+	       			 />
+		 
+			</TableRow>	
+
+	</TableLayout>
+	
+</LinearLayout>

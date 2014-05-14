@@ -1,0 +1,24 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+     <item  
+        android:id="@+id/menu01"        
+        android:title="@string/str_menu01"    
+        android:showAsAction="never"       
+        android:orderInCategory="1"            
+       />  
+       
+       <item  
+        android:id="@+id/menu02"  
+        android:title="@string/str_menu02"          
+        android:showAsAction="never"
+        android:orderInCategory="2"  />  
+    <item
+        android:id="@+id/menu03"
+        android:title="@string/str_menu03"  
+        android:showAsAction="never"
+        android:orderInCategory="3"
+        />
+
+</menu>

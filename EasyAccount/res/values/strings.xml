@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">简易记账</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_head02">统计</string>
+	<string name="str_head01">当月</string>
+	<string name="str_text01">设置日期：</string>
+	<string name="str_monthstart">月初</string>
+	<string name="str_monthend">月末</string>
+	<string name="str_but_monthstart">添加收入</string>
+	<string name="str_but_monthend">添加结余</string>
+	<string name="str_null"></string>
+	<string name="str_but_count">计算当月消费</string>
+	<string name="str_xiaofei">    您在当月共消费了：</string>
+	<string name="str_hint">0.0</string>
+	<string name="str_yuan">元</string>
+	<string name="str_cash">现金</string>
+	<string name="str_bank">银行卡</string>
+	<string name="str_zhifubao">支付宝</string>
+	<string name="str_yuebao">余额宝</string>
+	<string name="str_caifutong">财付通</string>
+	<string name="str_other">其它</string>
+	<string name="str_cancel">取消</string>
+	<string name="str_save">保存</string>
+	<string name="str_date">完成</string>
+	<string name="str_menu01">清除数据</string>
+	<string name="str_menu02">使用方法</string>
+	<string name="str_menu03">关于</string>
+	<string name="howtouse">使用说明</string>
+	<string name="abort">关于</string>
+	
+	
+	
+	
+	
+</resources>
